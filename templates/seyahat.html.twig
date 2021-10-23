@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tur Dünyası | Turlar</title>
+</head>
+    <link rel="stylesheet" href="turizm.css">
+<body>
+    <nav> 
+        <h1 align="center">TURLAR</h1>
+        <h2><a href="{{ path('anasayfa') }}">Anasayfa</a></h2>
+    </nav>
+    <div align="center">
+        <div>
+            <img src="{{asset('images/tur/tur2.jpg')}}" alt="Kültürel Turlar"  width="400" height="250">
+            <h2><a href="https://www.etstur.com/Kultur-Turlari" target="_blank">Kültürel Turlar</a></h2><br>
+        </div>
+        <div>
+            <img src="{{asset('images/tur/tur3.jpg')}}" alt="Yurt Dışı Turları" width="400" height="250">
+            <h2><a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari" target="_blank">Yurtdışı Turları</a></h2>
+        </div>
+        <div>
+            <img src="{{asset('images/tur/tur4.jpg')}}" alt="Size Özel Turlar" width="400" height="250">
+            <h2><a href="https://www.etstur.com/Size-Ozel-Turlar" target="_blank">Size Özel Turlar</a></h2>
+        </div>
+    </div>
+</body>
+</html>

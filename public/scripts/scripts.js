@@ -1,0 +1,1 @@
+alert ("Lütfen size uygun seyahat türünü seçiniz.")

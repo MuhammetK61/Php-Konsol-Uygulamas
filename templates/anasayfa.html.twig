@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TUR DÜNYASI{% endblock %}</title>
+    {% block stylesheets %}
+        <link href="{{asset('styles/turizm.css')}}" rel="stylesheet" >
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="{{asset('scripts/scripts.js')}}"></script>
+    {% endblock %}
+</head>
+<body>
+    <nav align ="center">
+        <h1>TUR DÜNYASINA HOŞGELDİNİZ</h1>
+        <img src="{{asset('images/anasayfa/anasayfa11.jpg')}}" alt="Tur Servisi" width="800" height="300"> <br>
+        <h1><a href="{{ path('hakkimizda') }}" target="_blank">Biz Kim miyiz?</a></h1>
+    </nav>
+    <table align="center">
+        <tr align="center">
+            <td> 
+                <h3><a href="{{ path('karavan') }}">Karavan mı?</a></h3>
+            </td>
+            <td>
+                <h3><a href="{{ path('otel') }}">Otel mi?</a></h3>
+            </td>
+            <td>
+                <h3><a href="{{ path('seyahat') }}">Yoksa Tur mu?</a></h3>
+            </td>
+        </tr align="center">
+            <td>
+                <img  src="{{asset('images/karavan/karavan1.jpg')}}" alt="Karavan"width="300" height="150">
+            </td>
+            <td>
+                <img src="{{asset('images/otel/otel1.jpg')}}" alt="Otel" width="300" height="150">
+            </td>
+            <td>
+                <img src="{{asset('images/tur/tur1.jpg')}}" alt="Tur" width="300" height="150">
+            </td>
+        <tr>
+
+        </tr>
+    </table>
+
+    <footer>
+         <h2 align="center">Bize Ulaşmak İster Misiniz?</h2>
+         <a href="tel:0555 555 55 55">Arayın!</a> <br>
+         <a href="mailto:muhammetali.karaguzel@gmail.com">Bize Yazın!</a>
+         <address>
+            Trabzonspor Mahallesi/ 1967 Sokak/ No:61
+            Tonya/TRABZON
+         </address>
+    </footer>
+
+    
+</body>
+</html>

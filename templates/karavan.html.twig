@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Tur Dünyası | Kiralık Karavan{% endblock %}</title>
+</head>
+    <link rel="stylesheet" href="turizm.css">
+<body>
+    <nav>
+        <h1 align="center">Kiralık Karavan Siteleri</h1>
+        <h2><a href="{{ path('anasayfa') }}">Anasayfa</a></h2>
+    </nav>
+    <div align="center">
+        <div>
+            <img src="{{asset('images/karavan/karavan2.png')}}" alt="Karavan" width="400" height="250"><br>
+            <h2><a href="https://www.kampyerleri.org/kiralik-karavan-ve-karavan-kiralama-hizmeti-arayanlara-shantigo/" target="_blank">ShantiGo</a></h2>
+        </div>
+        <div>
+            <img src="{{asset('images/karavan/karavan3.png')}}" alt="Karavan" width="400" height="250"><br>
+            <h2><a href="https://www.senanlatistanbul.com/pusula1_kiralik_karavan.html" target="_blank">Pusula Karavan</a></h2>
+        </div>
+        <div>
+            <img src="{{asset('images/karavan/karavan4.png')}}" alt="Karavan" width="400" height="250"><br>
+            <h2><a href="https://lumoskaravan.com/karavan-kiralama-fiyatlari/" target="_blank">Lumos Karavan</a></h2>
+        </div>
+    </div>
+    
+</body>
+</html>
